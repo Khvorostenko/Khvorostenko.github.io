@@ -9,7 +9,7 @@ body {
 .section-1 {
   width: 100%;
   height: 100vh;
-  background: url("/img/background-section-1.png");
+  background: url("/amz/img/background-section-1.png");
   -webkit-background-size: cover;
           background-size: cover; }
 
@@ -200,19 +200,19 @@ body {
       transition: all .7s ease; }
 
 .block-1 {
-  background: url(/img/section-2-block-1.png);
+  background: url(/amz/img/section-2-block-1.png);
   background-color: black;
   -webkit-background-size: cover;
           background-size: cover; }
 
 .block-2 {
-  background: url(/img/section-2-block-2.png);
+  background: url(/amz/img/section-2-block-2.png);
   background-color: black;
   -webkit-background-size: cover;
           background-size: cover; }
 
 .block-3 {
-  background: url(/img/section-2-block-3.png);
+  background: url(/amz/img/section-2-block-3.png);
   background-color: black;
   -webkit-background-size: cover;
           background-size: cover; }
@@ -452,6 +452,6 @@ footer {
   .political {
     display: none; }
   .section-1 {
-    background: url("/img/background-section-1-small.png");
+    background: url("/amz/img/background-section-1-small.png");
     -webkit-background-size: cover;
             background-size: cover; } }
