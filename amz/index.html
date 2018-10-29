@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AMZ TATOO</title>
+    <link rel="shortcut icon" href="/img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section class="section-1">
+        <div id="menu-burger">
+            <i class="fas fa-times" @click="showMenu = false" v-if="showMenu"></i>
+            <i class="fas fa-bars" @click="showMenu = true" v-else></i>
+            <div class="logo-menu-burger"><a href=""><img src="/img/logo.png" alt="amz tatto"></a><span>amz tatto</span></div>
+            <transition name="fade">
+                <ul v-show="showMenu">
+                    <li v-for="item in menu"><a href="">{{item.name}}</a></li>
+                </ul>
+            </transition>
+        </div>
+        <div id="panel-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="logo"><a href=""><img src="/img/logo.png" alt="amz tatto"></a><span>amz tatto</span></div>
+                    </div>
+                    <div class="col-5">
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#about">О нас</a></li>
+                                <li><a href="#portfolio">Портфолио</a></li>
+                                <li><a href="#forWork">Этапы работы</a></li>
+                                <li><a href="#team">Команда</a></li>
+                                <li><a href="#price">Цены</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-5">
+                        <div id="vm-head" class="contact-panel">
+                            <a href="#"><img src="/img/email.png" id="show-modal" @click="showModal = true" alt="email"></a><span>Написать
+                                нам</span><a href="#"><img src="/img/speech-bubble.png" alt="phone"></a><span>+7 (495)
+                                223456</span> <a href="#contactForm"><button class="btn btn-danger">Записаться
+                                    на сеанс</button></a>
+                            <modal v-if="showModal" @close="showModal = false">
+                            </modal>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-text"><span>Крутите вниз &darr;</span></div>
+    </section>
+    <section class="section-2" id="about">
+        <h1>Почему выбирают нас</h1>
+        <p>Все услуги нашей студии оказываются профессионалами<br>
+            и с помощью современного<br>
+            оборудования</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="block-1">
+                        <span id="howTattoo"></span>
+                        <p>татуировок сделали наши мастера</p>
+                        <hr align="center" width="300" color="#ffffff" />
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="block-2">
+                        <span id="tattooMaster">12</span>
+                        <p>мастеров высочайшего уровня</p>
+                        <hr align="center" width="300" color="#ffffff" />
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="block-3">
+                        <span>100%</span>
+                        <p>стерильность оборудования</p>
+                        <hr align="center" width="300" color="#ffffff" />
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section-3" id="portfolio">
+        <h1>Наши работы</h1>
+        <p>Главная цель мастера - передать не только картинку, <br>
+            но и задумку, особенности <br>
+            и эмоции человека.</p>
+        <div id="app-img" class="container">
+            <div class="row">
+                <div class="col">
+                    <img v-img src="/img/gall-1.png" alt="tatto">
+                </div>
+                <div class="col">
+                    <img v-img src="/img/gall-2.png" alt="tatto">
+                </div>
+                <div class="col">
+                    <img v-img src="/img/gall-3.png" alt="tatto">
+                </div>
+                <div class="col">
+                    <img v-img src="/img/gall-4.png" alt="tatto">
+                </div>
+                <div class="col">
+                    <img v-img src="/img/gall-5.png" alt="tatto">
+                </div>
+                <div class="col">
+                    <img v-img src="/img/gall-6.png" alt="tatto">
+                </div>
+
+            </div>
+            <button class="btn btn-danger" onclick="alert('Полная галлерея в разработке. Приносим свои извинения!')">Открыть
+                галлерею <i class="fas fa-chevron-circle-right"></i> </button>
+    </section>
+    <section class="section-4" id="forWork">
+        <h1>Как мы работаем</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="snippet">
+                        <div class="round"><span>1</span></div>
+                        <h6>Заявка на сайте или по телефону</h6>
+                        <p>Мы воплотим любую вашу идею
+                            татуировки в жизнь.
+                            Оставьте заявку и мы
+                            перезвоним вам в течение 15 минут.</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="snippet">
+                        <div class="round"><span>2</span></div>
+                        <h6>Разработка уникального эскиза</h6>
+                        <p>Далее мастер приступает к созданию
+                            индивидуального эскиза татуировки
+                            по вашей задумке и утверждает
+                            его с вами.</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="snippet">
+                        <div class="round"><span>3</span></div>
+                        <h6>Сеанс татуировки и итоговая оплата</h6>
+                        <p>В стерильной студии и с
+                            использованием лучшего
+                            оборудования вы получаете
+                            качественную татуировку.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5" id="contactForm">
+        <form class="form-inline">
+            <div class="group-control mb-5 mt-5 form-panel">
+                <input type="text" class="form-control mb-2" placeholder="*Имя">
+                <input type="tel" pattern="[0-9]{11}" title="Введите номер телефона" class="form-control mb-2"
+                    placeholder="*Телефон">
+                <button class="btn btn-danger mb-2">Записаться</button><br>
+                <small class="mt-4">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                    соглашаетесь c политикой конфиденциальности.</small>
+            </div>
+        </form>
+    </section>
+    <section class="section-6" id="team">
+        <h1>Наша команда</h1>
+        <p style="text-align: center">
+            Искусство предполагает чувства за творчеством, а татуировка несет <br>
+            эти чувства через всю жизнь. Именно поэтому татуировку можно <br>
+            назвать искусством в его чистом виде.
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="/img/team-1.png" alt="tattoo-master">
+                    <h6>Максим Хорламов</h6>
+                    <p>Макс специализируется на
+                        татуировках в стиле реализм,
+                        качественно и быстро
+                        исполняя масштабные работы.</p>
+                </div>
+                <div class="col">
+                    <img src="/img/team-2.png" alt="tattoo-master">
+                    <h6>Петр Герасимов</h6>
+                    <p>Основная масса работ Петра -
+                        это татуировки в стиле
+                        black&gray, а также графика и
+                        кавер-ап в реализме.</p>
+                </div>
+                <div class="col">
+                    <img src="/img/team-3.png" alt="tattoo-master">
+                    <h6>Анна Ильина</h6>
+                    <p>Анна - специалист пирсинга и
+                        микродермала, имеющий
+                        медицинское образование и 3
+                        года успешного опыта работы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="logo"><span style="font-weight: bold">amz tatoo</span></div>
+
+                </div>
+                <div class="col-sm political">
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <div class="col-sm">
+                    <div class="social-bar">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- custom Vue Component -->
+
+
+    <template id="modal-template">
+        <transition name="modal">
+            <div class="modal-mask">
+                <div class="modal-wrapper">
+                    <div class="modal-container">
+
+                        <div class="modal-header">
+                            <slot name="header">
+                                <h3>Написать нам</h3>
+                                <i class="fas fa-times-circle" @click="$emit('close')"></i>
+                            </slot>
+                        </div>
+
+                        <div class="modal-body">
+                            <slot name="body">
+                                <form>
+                                    <input class="form-control mb-2" type="text" placeholder="Имя*">
+                                    <input class="form-control mb-2" type="tel" placeholder="Телефон*">
+                                    <textarea class="form-control" placeholder="Сообщение*" rows="10" cols="40"></textarea>
+                                </form>
+                            </slot>
+                        </div>
+
+                        <div class="modal-footer">
+                            <slot name="footer">
+                                <button type="submit" class="btn btn-danger modal-default-button" @click="$emit('close')">
+                                    Отправить
+                                </button>
+                            </slot>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </transition>
+    </template>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/v-img@latest/dist/v-img.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
