@@ -21,7 +21,7 @@
             <div class="logo-menu-burger"><a href=""><img src="img/logo.png" alt="amz tatto"></a><span>amz tatto</span></div>
             <transition name="fade">
                 <ul v-show="showMenu">
-                    <li v-for="item in menu"><a href="">{{item.name}}</a></li>
+                    <li v-for="item in menu"><a v-bind:href="item.href">{{item.name}}</a></li>
                 </ul>
             </transition>
         </div>
