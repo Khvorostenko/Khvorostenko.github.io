@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Voynich</title>
+  <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <section id="logo" class="section-1">
+      <div id="menu-burger">
+        <div>
+          <i class="fas fa-times" @click="showMenu = false" v-if="showMenu"></i>
+          <i class="fas fa-bars burger-icon" @click="showMenu = true" v-else></i>
+          </div>
+          <transition name="fade">
+              <ul v-show="showMenu">
+                  <li v-for="item in menu"><a :href="item.href">{{item.name}}</a></li>
+              </ul>
+          </transition>
+      </div>
+    <div class="container">
+      <div class="row wow slideInDown" data-wow-delay="2s">
+        <div class="col-5"><div class="logo"><img src="img/logo.png" alt="logo"><br><span>Voynich</span></div></div>
+        <div class="col-7">
+            <div class="menu">
+                <nav>
+                  <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#products">products</a></li>
+                    <li><a href="#pages">pages</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#live-chat">live chat</a></li>
+                  </ul>
+                </nav>
+              </div>
+        </div>
+      </div>
+      <div class="text-header wow fadeInLeft" data-wow-duration="2s">
+          <h1>Ideas worth <br>sharing</h1>
+          <span>Find the answer <u>right now</u></span><br>
+         <a href="#about"><i class="fas fa-long-arrow-alt-down"></i></a>
+        </div>
+  </section>
+ <section id="about" class="section-2">
+  <div class="container"> 
+    <div class="row">
+      <div class="col">
+          <h6>About us</h6>
+          <h2>When there is too much at risk, and you <br> need  a trusted partner</h2>
+          <p>Tellus commodo torquent sodales imperdiet massa risus. Erat magnis est nascetur
+             molestie integer non eros justo. Urna. Morbi. Mus eleifend mattis nec dictum risus
+             parturient vehicula fermentum rhoncus. Mattis Facilisi, odio aptent nullam sodales curae; dolor primis semper faucibus vehicula nostra turpis. Orci per Viverra commodo ligula dis ullamcorper primis.</p>
+      </div>
+    </div>
+      <div class="row wow fadeInUp" data-wow-duration="1s">
+      <div class="col-xs-12 col-md-4">
+        <img src="img/Shape_1.png" alt="Dignissim">
+        <h5>Dignissim cubilia litora</h5>
+        <span>Malesuada libero fames donec vulputate. Velit sollicitudin est blandit nascetur primis Amet. Facilisi</span>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="img/Shape_2.png" alt="Ridiculus">
+        <h5>Ridiculus lectus elit</h5>
+        <span>Vel sagittis ipsum ultricies magnis elementum posuere. Nam sociosqu lobortis eros pretium convallis non</span>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="img/Shape_3.png" alt="Suscipit">
+        <h5>Suscipit pretium commodo</h5>
+        <span>Fermentum litora. Ullamcorper semper facilisis varius ante varius tellus laoreet phasellus, nascetur dis fusce</span>
+      </div>
+      </div>
+      <div class="row wow fadeInUp" data-wow-delay="1s">
+          <div class="col-xs-12 col-md-4">
+              <img src="img/Shape_4.png" alt="Odio">
+              <h5>Odio dictum eleifend nulla</h5>
+              <span>Cursus sed, neque malesuada sociosqu at condimentum tellus elit adipiscing, praesent faucibus</span>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <img src="img/Shape_5.png" alt="Lectus">
+                <h5>Lectus nisi risus nostra</h5>
+                <span>Lectus nisi risus nostra hymenaeos pharetra neque curabitur volutpat leo. Cum hac etiam gravida. A</span>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                  <img src="img/Shape_6.png" alt="Justo">
+                  <h5>Justo a inceptos id natoque</h5>
+                  <span>Lacinia. Euismod hac, integer conubia primis dui faucibus nostra odio. Feugiat consequat viverra lorem</span>
+                </div>
+      </div>
+  </div>
+  </section>
+<section id="products" class="section-3">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h6>Killer features</h6>
+      <h2>You have deal with real problems, we <br> have real solutions</h2>
+      <p>Tellus commodo torquent sodales imperdiet massa risus. Erat magnis est nascetur molestie integer non eros justo. Urna. Morbi. Mus eleifend mattis nec dictum risus parturient vehicula fermentum rhoncus. Mattis Facilisi, odio aptent nullam sodales curae; dolor primis semper faucibus vehicula nostra turpis. Orci per Viverra commodo ligula dis ullamcorper primis.</p>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="block wow slideInRight">
+          <img src="img/Shape_7.png" alt="">
+          <h5>Dignissim euismod</h5>
+          <span>Rhoncus eros aenean scelerisque curabitur nascetur, sodales nisl, cubilia integer ad non</span>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+          <div class="block wow slideInRight" data-wow-delay="0.5s">
+            <img src="img/Shape_8.png" alt="">
+            <h5>Class tempor</h5>
+            <span>Nascetur mattis varius justo vehicula diam fermentum tristique sodales luctus.</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="block wow slideInRight" data-wow-delay="1s">
+              <img src="img/Shape_9.png" alt="">
+              <h5>Luctus sociosqu</h5>
+              <span>Sagittis luctus laoreet fusce tincidunt nascetur rhoncus molestie per amet.</span>
+            </div>
+          </div>
+    </div>
+</div>
+</section>
+<section id="pages" class="section-4">
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-md-6 col-sm-12">
+        <h6>Trusted Partners</h6>
+        <div id="app">
+            <first-partner v-if="look"></first-partner>
+            <second-partner v-else></second-partner>
+          <i @click="look = !look" class="fas fa-long-arrow-alt-right"></i>
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="section-5">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h6>testimonials</h6>
+      <h2>You need the best team working for your <br> hard earned money</h2>
+      <div class="carousel"
+      data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell">Nullam etiam ligula pellentesque Erat euismod dignissim pulvinar ridiculus suscipit, aptent proin duis nisi eros eros vulputate. Congue aptent. Lobortis cubilia hac nonummy risus interdum maecenas morbi condimentum Imperdiet quis a orci nascetur. Sociosqu magna. Hac hendrerit eu turpis adipiscing”</div>
+      <div class="carousel-cell">Massa ipsum odio convallis ligula consectetuer, sagittis gravida est faucibus laoreet semper sapien curabitur. Sociis ullamcorper aenean ullamcorper parturient fames consequat. Aptent faucibus, placerat penatibus maecenas scelerisque mi turpis. Pharetra tempus id velit lobortis est eu fermentum placerat accumsan quis suspendisse.</div>
+      <div class="carousel-cell">Fusce, ante nec commodo pulvinar Tempus cum litora tincidunt porttitor quis litora class consectetuer mus eleifend mauris netus. Sodales et ornare sociosqu. Odio aptent erat velit adipiscing consequat. Senectus purus ac.</div>
+      <div class="carousel-cell">Duis placerat morbi dictumst dictumst nonummy quis nonummy enim ornare turpis non eros aliquam convallis etiam risus eros. Proin. Ipsum integer cursus. Arcu nec ullamcorper dictum vulputate hendrerit.</div>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="contact" class="section-6">
+  <div class="container">
+    <div class="row wow jackInTheBox" data-wow-delay="1s">
+      <div class="col-12">
+        <h6>get in touch</h6>
+        <h2>Alright, let’s get this success thing rollin’<br> once for all</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-7">
+        <div class="form-control">
+          <form>
+            <h4>Drop us a line</h4>
+              <div class="group">
+                  <input type="text" required class="">
+                  <span class="bar"></span>
+                  <label>
+                      <span class="glyphicon glyphicon-user"></span>Your Name</label>
+              </div>
+              <div class="group">
+                  <input type="text" required>
+                  <span class="bar"></span>
+                  <label>
+                      <span class="glyphicon glyphicon-envelope"></span>E-mail</label>
+              </div>
+              <div class="group">
+                  <input type="text" required>
+                  <span class="bar"></span>
+                  <label>
+                      <span class="glyphicon glyphicon-comment"></span>How can we help?</label>
+              </div>
+        <div class="group">
+          <a href="#">Send Message<i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </form>
+          </div>
+      </div>
+      <div class="col-xs-12 col-md-5">
+          <div class="contact">
+              <h4>Contact us</h4>
+            <p>4241 Some Street, 
+                Building B7, 32000
+                Juarez, Mexico</p>
+                <p>
+                    01800 123 4455
+                    info@voynich.com
+                </p>
+                <ul class="social-bar">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                </ul>
+                <a id="live-chat" class="live_chat" href="">Live chat</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="anchor">
+   <a href="#logo"><i class="fas fa-arrow-circle-up"></i></a>
+</div>
+
+
+
+
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+
+</html>

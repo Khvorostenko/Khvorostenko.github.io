@@ -1,0 +1,494 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background: url("/voynich/img/section-1-bg.png");
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.logo {
+  padding-top: 10px; }
+  .logo span {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.68px;
+    color: #b7fee3; }
+  .logo img {
+    padding-left: 15px; }
+
+.menu {
+  text-align: center;
+  padding-top: 40px;
+  display: block; }
+  .menu li {
+    display: inline; }
+  .menu a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.97px;
+    padding-left: 30px; }
+    .menu a:hover {
+      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      background-color: #b7fee3;
+      padding: 12px;
+      color: #3e705d;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+
+#menu-burger {
+  width: 100%;
+  position: fixed;
+  color: #ffffff;
+  top: -16px;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 99;
+  display: none; }
+  #menu-burger i {
+    font-size: 30px;
+    line-height: 50px;
+    float: right;
+    z-index: 999;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer; }
+  #menu-burger a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase; }
+    #menu-burger a:hover {
+      font-weight: bold; }
+  #menu-burger ul {
+    background: rgba(62, 112, 93, 0.9); }
+  #menu-burger li {
+    list-style-type: none;
+    line-height: 40px;
+    text-align: center; }
+
+.burger-icon {
+  padding: 0px 12px 0px 12px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: rgba(62, 112, 93, 0.9);
+  opacity: 0.7; }
+
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s; }
+
+.fade-enter, .fade-leave-to {
+  opacity: 0; }
+
+.text-header {
+  margin-top: 20vh; }
+  .text-header h1 {
+    color: #b7fee3;
+    font-family: 'Montserrat';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 85px; }
+  .text-header span {
+    font-weight: 400;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    line-height: 20px;
+    color: #ffffff; }
+  .text-header i {
+    color: #b7fee3;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    -webkit-animation-name: pulse;
+            animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.7; }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.7; } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.7; }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.7; } }
+
+.section-2 {
+  width: 100%;
+  background: url("/voynich/img/section-2-bg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  text-align: center;
+  padding-bottom: 50px; }
+  .section-2 h6 {
+    color: #3e705d;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase; }
+  .section-2 h2 {
+    color: #182b24;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px; }
+  .section-2 p {
+    max-width: 750px;
+    margin: auto;
+    color: #3a3b3b;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; }
+  .section-2 h5 {
+    color: #182b24;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px; }
+  .section-2 span {
+    color: #182b24;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 50px; }
+  .section-2 img {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px; }
+
+.section-3 {
+  width: 100%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-bottom: 50px; }
+  .section-3 h6 {
+    color: #3e705d;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase; }
+  .section-3 h2 {
+    color: #182b24;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px; }
+  .section-3 p {
+    max-width: 750px;
+    margin: auto;
+    color: #3a3b3b;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; }
+
+.block {
+  background: url("/voynich/img/section-2-bg.png");
+  padding: 30px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-top: 50px;
+  min-height: 410px; }
+  .block h5 {
+    color: #3a3b3b;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px; }
+  .block span {
+    font-family: "Open Sans";
+    color: #3a3b3b;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px; }
+
+.section-4 {
+  width: 100%;
+  background: url("/voynich/img/section-4-bg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-bottom: 50px;
+  min-height: 100vh; }
+  .section-4 h6 {
+    color: #3e705d;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase; }
+  .section-4 h2 {
+    color: #182b24;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px; }
+  .section-4 p {
+    max-width: 750px;
+    margin: auto;
+    color: #3a3b3b;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; }
+  .section-4 i {
+    font-size: 35px;
+    margin-top: 10px;
+    color: #3e705d;
+    cursor: pointer; }
+
+.section-5 {
+  width: 100%;
+  background: url("/voynich/img/section-5-bg.png");
+  text-align: center;
+  padding-bottom: 100px; }
+  .section-5 h6 {
+    color: #3e705d;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase; }
+  .section-5 h2 {
+    color: #182b24;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px; }
+
+.section-6 {
+  width: 100%;
+  background: url("/voynich/img/section-6-bg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  text-align: center;
+  padding-bottom: 100px; }
+  .section-6 h6 {
+    color: #3e705d;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase; }
+  .section-6 h2 {
+    color: #f8f8f8;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px; }
+
+.group {
+  position: relative;
+  margin-bottom: 30px; }
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  display: inline-block;
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid #b7fee3;
+  background: none;
+  margin-bottom: 50px;
+  color: #b7fee3;
+  outline: none; }
+  input input:focus {
+    outline: none; }
+
+/* LABEL ======================================= */
+label {
+  color: #b7fee3;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 70px;
+  top: 15px;
+  -webkit-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all; }
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #b7fee3; }
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 500px; }
+  .bar .bar:before, .bar .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 50px;
+    position: absolute;
+    background: #fff;
+    -webkit-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    border-bottom: 3px solid #fff; }
+  .bar .bar:before {
+    left: 50%; }
+  .bar .bar:after {
+    right: 50%; }
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width: 50%; }
+
+.group span {
+  padding-right: 5px; }
+
+.form-control {
+  border: 1px solid #b7fee3;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+  .form-control h4 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #b7fee3; }
+  .form-control a {
+    text-decoration: none;
+    color: #b7fee3;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 48px;
+    font-size: 20px; }
+    .form-control a:hover {
+      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      background-color: #b7fee3;
+      padding: 12px;
+      color: #3e705d;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+      .form-control a:hover i {
+        color: #3e705d; }
+  .form-control i {
+    font-size: 20px;
+    color: #b7fee3;
+    padding-left: 10px; }
+
+.contact h4 {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #b7fee3; }
+
+.contact p {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #b7fee3; }
+
+.social-bar {
+  padding-bottom: 50px; }
+  .social-bar li {
+    display: inline; }
+  .social-bar a {
+    text-decoration: none;
+    color: #b7fee3;
+    padding: 10px; }
+
+.live_chat {
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #b7fee3;
+  padding: 12px;
+  color: #3e705d;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px; }
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 200px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  counter-increment: gallery-cell;
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-size: 24px;
+  line-height: 48px;
+  color: #182b24; }
+
+#anchor {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 100;
+  font-size: 50px;
+  cursor: pointer; }
+  #anchor i {
+    color: #3e705d; }
+
+@media screen and (max-width: 425px) {
+  .section-2 h2, .section-3 h2, .section-4 h2, .section-5 h2, .section-6 h2 {
+    font-size: 25px; }
+  .section-2 p, .section-3 p, .section-4 p, .section-5 p, .section-6 p {
+    font-size: 15px; }
+  .block {
+    max-height: 300px;
+    margin: 20px; }
+  .carousel-cell {
+    font-size: 12px;
+    line-height: 20px; }
+  .text-header h1 {
+    font-size: 40px;
+    line-height: 50px; } }
+
+@media screen and (max-width: 1205px) {
+  #menu-burger {
+    display: block; }
+  .menu {
+    display: none; } }
