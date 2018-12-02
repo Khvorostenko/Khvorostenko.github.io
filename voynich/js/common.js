@@ -13,15 +13,6 @@ for (let anchor of anchors) {
   })
 };
 
-window.onscroll = function () {
-  let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrolled > 400) {
-    document.getElementById('anchor').style.cssText = ' transition: 1.5s; display: block;';
-
-  } else {
-      document.getElementById('anchor').style.display = '';
-  }
-};
 
 let pages = new Vue({
     el:'#app',
@@ -68,6 +59,17 @@ let menu = new Vue({
       ],
       showMenu: false
     }
-  }
+  },
+  mounted() {
+    window.onscroll = function () {
+      let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrolled > 400) {
+        document.getElementById('anchor').style.cssText = ' transition: 1.5s; display: block;';
+    
+      } else {
+          document.getElementById('anchor').style.display = '';
+      }
+    }
+  },
 })
 
