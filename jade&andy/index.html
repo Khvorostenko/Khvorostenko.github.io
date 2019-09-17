@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Standpoint</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/slick/slick.css">
+  <link rel="stylesheet" href="/slick/slick-theme.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://kit.fontawesome.com/22637032e8.js"></script>
+</head>
+
+<body>
+  <div id="home" class="container-fluid">
+    <div class="row">
+      <div id="navbar" class="col-12 nav-bar fixed-top">
+        <nav class="navbar d-flex justify-content-center align-items-center">
+          <ul class="d-none d-md-block">
+            <li class="align-middle"><a href="#home">Home</a></li>
+            <li class="align-middle"><a href="#service">Services</a></li>
+            <li class="align-middle"><a href="#portfolio">Our work</a></li>
+            <li class="align-middle"><a href="#about">About us</a></li>
+            <li class="align-middle"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <i onclick="burgerNav()" class="fas fa-bars d-md-none d-block"></i>
+      </div>
+    </div>
+    <div class="row section-1">
+      <div class="col-12">
+        <div class="logo">
+          <span class="line-one"></span>
+          <svg stroke-opacity="1" fill="#ffffff" ; preserveAspectRatio="xMidYMid meet"
+            data-bbox="26.453 27.436 147.035 145.129" xmlns="http://www.w3.org/2000/svg"
+            viewBox="26.45282745361328 27.43550682067871 147.03463745117188 145.1289825439453" role="img"
+            style="stroke-width: 0px;">
+            <g>
+              <path
+                d="M63.2 136.9c8.4 8.4 8.4 22.1 0 30.5-2.3 2.3-5.1 4.1-8.2 5.1-.8.3-1.6-.5-1.4-1.3l4.7-16c.1-.5.1-1-.2-1.3-4.6-6.2-12.4-8.5-19.6-5.7-.4.2-.8.5-.9 1L32.9 165c-.2.8-1.3 1-1.9.4-6.6-8.5-6-20.7 1.7-28.5 8.4-8.4 22.1-8.5 30.5 0zm0-73.8c8.4-8.4 8.4-22.1 0-30.5-2.3-2.3-5.1-4.1-8.2-5.1-.8-.3-1.6.5-1.4 1.3l4.7 16c.1.5.1 1-.2 1.3-4.6 6.2-12.4 8.5-19.6 5.7-.4-.2-.8-.5-.9-1L32.9 35c-.2-.8-1.3-1.1-1.9-.4-6.6 8.5-6 20.7 1.7 28.5 8.4 8.4 22.1 8.5 30.5 0zm104 0c7.7-7.7 8.4-20 1.7-28.5-.5-.7-1.6-.5-1.9.4l-4.6 15.9c-.1.5-.5.9-.9 1-7.2 2.8-15 .5-19.6-5.7-.3-.4-.4-.9-.2-1.3l4.7-16c.2-.8-.6-1.6-1.4-1.3-3.1 1.1-5.9 2.9-8.2 5.1-8.4 8.4-8.4 22 0 30.5 8.4 8.4 22.1 8.3 30.4-.1zm-37.8 2.4c1.5 2 3.1 3.5 5.1 5.1l-21.8 21.8 5.1 5.1L138 77.3c3.3-3.3 7.4-5.7 11.8-7-5-.5-9.8-2.6-13.6-6.4-3.8-3.8-5.9-8.7-6.4-13.6-1.3 4.5-3.7 8.5-7 11.8l-20.2 20.2 5.1 5.1 21.7-21.9zm-58.8 69c-1.5-2-3.1-3.5-5.1-5.1l21.8-21.8-5.1-5.1L62 122.7c-3.3 3.3-7.4 5.7-11.8 7 5 .5 9.8 2.6 13.6 6.4 3.8 3.8 5.9 8.7 6.4 13.6 1.3-4.5 3.7-8.5 7-11.8l20.2-20.2-5.1-5.1-21.7 21.9zm96.6 2.4c-8.4-8.4-22-8.4-30.4 0-8.4 8.4-8.4 22.1 0 30.5 2.3 2.3 5.1 4.1 8.2 5.1.8.3 1.6-.5 1.4-1.3l-4.7-16c-.1-.5-.1-1 .2-1.3 4.6-6.2 12.4-8.5 19.6-5.7.4.2.8.5.9 1l4.6 15.9c.2.8 1.3 1 1.9.4 6.7-8.7 6-20.9-1.7-28.6zm-31-.7c-3.8 3.8-5.9 8.7-6.4 13.6-1.3-4.5-3.7-8.5-7-11.8L62.1 77.2c-3.3-3.3-7.4-5.7-11.8-7 5-.5 9.8-2.6 13.6-6.4 3.8-3.8 5.9-8.7 6.4-13.6 1.3 4.5 3.7 8.5 7 11.8l60.7 60.8c3.3 3.3 7.4 5.7 11.8 7-5 .5-9.8 2.6-13.6 6.4zm-1.8-6.8L70.6 65.5c-1.5 2-3.1 3.5-5.1 5.1l63.8 63.9c1.6-2 3.2-3.6 5.1-5.1z">
+              </path>
+            </g>
+          </svg>
+          <span class="line-two"></span>
+        </div>
+        <h1>JADE & ANDY</h1>
+        <h5>VINTAGE CAR SPECIALIST</h5>
+      </div>
+      <div class="col-12 social-bar">
+        <ul>
+          <li><a href=""><i class="fab fa-vk"></i></a></li>
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="service" class="section-2 container-fluid d-flex align-items-center">
+    <div class="row justify-content-center wow fadeIn" data-wow-duration="2s">
+      <div class="col-12">
+        <h1>SERVICES</h1>
+        <div class="line-light"></div>
+      </div>
+      <div class="col-md-3 col-12 ">
+        <img src="/src/img/REPAIRS.png" alt="">
+        <h3>REPAIRS</h3>
+        <p>General Repairs, Specialist Repairs & Vintage Parts</p>
+      </div>
+      <div class="col-md-3 col-12 ">
+        <img src="/src/img/UPHOLSTERY.png" alt="">
+        <h3>UPHOLSTERY</h3>
+        <p>A Range of Fabrics, Including Vintage Leathers, & Wide Variety of Colors</p>
+      </div>
+      <div class="col-md-3 col-12">
+        <img src="/src/img/PAINTWORK1.png" alt="">
+        <h3>PAINTWORK</h3>
+        <p>Spray paint, Custom Stencilling & Variety of Custom Made Artwork</p>
+      </div>
+    </div>
+  </div>
+  <div id="portfolio" class="section-3 container">
+    <h1>OUR WORK</h1>
+    <div class="line-dark"></div>
+    <h3>A collection of cars we've renovated with passion</h3>
+    <div class="row wow fadeIn" data-wow-duration="2s"">
+      <div class="col-md-4 col-sm-6 col-12 gallery-1">
+        <div onclick="wrapperGallery()"  class="block-info">
+            <h4>I’m an image title</h4>
+            <p>Describe your image here. Use catchy text to tell people the story behind the photo.
+              Go to “Manage Media” to add your content.</p>
+              <i id="heart" onclick="test(event)" class="far fa-heart icon-heart"></i>
+              <i class="fas fa-share icon-share"></i>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12 gallery-2">
+          <div onclick="wrapperGallery()" class="block-info">
+              <h4>I’m an image title</h4>
+              <p>Describe your image here. Use catchy text to tell people the story behind the photo.
+                Go to “Manage Media” to add your content.</p>
+                <i class="far fa-heart icon-heart"></i>
+                <i class="fas fa-share icon-share"></i>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12 gallery-3">
+          <div onclick="wrapperGallery()" class="block-info">
+              <h4>I’m an image title</h4>
+              <p>Describe your image here. Use catchy text to tell people the story behind the photo.
+                Go to “Manage Media” to add your content.</p>
+                <i class="far fa-heart icon-heart"></i>
+                <i class="fas fa-share icon-share"></i>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12 gallery-4">
+          <div onclick="wrapperGallery()" class="block-info">
+              <h4>I’m an image title</h4>
+              <p>Describe your image here. Use catchy text to tell people the story behind the photo.
+                Go to “Manage Media” to add your content.</p>
+                <i class="far fa-heart icon-heart"></i>
+                <i class="fas fa-share icon-share"></i>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12 gallery-5">
+          <div onclick="wrapperGallery()" class="block-info">
+              <h4>I’m an image title</h4>
+              <p>Describe your image here. Use catchy text to tell people the story behind the photo.
+                Go to “Manage Media” to add your content.</p>
+                <i class="far fa-heart icon-heart"></i>
+                <i class="fas fa-share icon-share"></i>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12 gallery-6">
+          <div onclick="wrapperGallery()" class="block-info">
+              <h4>I’m an image title</h4>
+              <p>Describe your image here. Use catchy text to tell people the story behind the photo.
+                Go to “Manage Media” to add your content.</p>
+                <i class="far fa-heart icon-heart"></i>
+                <i class="fas fa-share icon-share"></i>
+          </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="about" class="container-fluid section-4 d-flex align-items-center">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6 block-about wow fadeIn" data-wow-duration="2s"">
+            <h1>ABOUT US</h1>
+            <div class=" line-dark"></div>
+      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
+        me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your
+        page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+      <p>This is a great space to write long text about your company and your services. You can use this space to go
+        into a little more detail about your company. Talk about your team and what services you provide. </p>
+    </div>
+  </div>
+  </div>
+  <div class=" container-fluid section-5">
+    <!-- ================= -->
+  </div>
+  <div id="contact" class="container-fluid section-4">
+    <div class="img-car"><img src="/src/img/car.png" alt=""></div>
+    <div class="block-contact wow fadeIn" data-wow-duration="2s">
+      <h1>FIND US</h1>
+      <div class=" line-dark"></div>
+    <div class=" row">
+      <div class="col-lg-6 col-sm-12">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nulla debitis enim eos, fuga corporis! Dolores officiis sit quaerat voluptat</p>
+        <i class="fas fa-envelope"></i>
+        <p>Godiegogo@ukr.net</p>
+        <i class="fas fa-phone"></i>
+        <p>099 64-48-507</p>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name">
+
+          </div>
+          <div class="form-group">
+
+            <input type="email" class="form-control" placeholder="Email">
+
+          </div>
+          <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="Subject">
+
+          </div>
+          <div class="form-group">
+
+            <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark float-right btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="wow fadeIn" data-wow-duration="2s"">
+    <ul>
+      <li><a href=""><i class=" fab fa-vk"></i></a></li>
+    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+
+
+
+<div id="wrapper-menu" class="wrapper-menu  animated fadeInRight justify-content-center">
+    <ul onclick="backNav()">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#portfolio">Our work</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+
+<div id="wrapper-gallery" class="wrapper-gallery animated fadeIn ">
+    <i onclick="closeGallery()" class="fas fa-times icon-close"></i>
+<div class="row">
+  <div class="col-md-8 col-sm-6 col-12">
+    <div class="gallery">
+      <div><img src="/src/img/gl-1.webp" alt=""></div>
+      <div><img src="/src/img/gl-2.webp" alt=""></div>
+      <div><img src="/src/img/gl-3.webp" alt=""></div>
+      <div><img src="/src/img/gl-4.webp" alt=""></div>
+      <div><img src="/src/img/gl-5.webp" alt=""></div>
+      <div><img src="/src/img/gl-6.webp" alt=""></div>
+    
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 col-12 gallery-info">
+     <h6> I’m an image title</h6>
+     <p>      Describe your image here. Use catchy text to tell people the story behind the photo. 
+        Go to “Manage Media” to add your content.</p>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  
+  <script type="text/javascript" src="/slick/slick.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
