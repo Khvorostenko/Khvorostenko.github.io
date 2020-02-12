@@ -36,16 +36,8 @@ body {
     letter-spacing: 0.97px;
     padding-left: 30px; }
     .menu a:hover {
-      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-              box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-      -webkit-border-radius: 3px;
-              border-radius: 3px;
-      background-color: #b7fee3;
-      padding: 12px;
-      color: #3e705d;
-      -webkit-transition: .2s;
-      -o-transition: .2s;
-      transition: .2s; }
+      color: red;
+    }
 
 #menu-burger {
   width: 100%;
